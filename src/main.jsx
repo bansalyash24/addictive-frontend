@@ -4,8 +4,9 @@ import App from './App.jsx'
 import { Provider } from 'react-redux'
 import store from './lib/store.js'
 import './index.css'
+import axios from 'axios'
 
-axios.defaults.baseURL = 'https://api.example.com';
+axios.defaults.baseURL = 'https://addictive-backend.onrender.com/';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={store}>
